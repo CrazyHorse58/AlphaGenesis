@@ -1,0 +1,34 @@
+funding_yml= {
+    "colective": {
+"patreon": {
+    "url": "[1]
+(http://opencollective.com/copilot)",
+    "type": "opencollective",
+    "platform": "opencollective"
+}
+"patreon": {
+    "url": "[2]
+(http://www.patreon.com/copilot)",
+    "type": "patreon",
+    "platform": "patreon"
+}
+ko_fi: {
+  "url": "[3](http://ko-fi.com/copilot
+  "type": "ko-fi",
+  "platform": "ko-fi"
+  }
+}
+with open("funding.yml", "w" as f:
+  for key, value in funding_yml.items():
+    f.write(f"{key}:\n")
+    for sub_key, sub_value in value in value.items():
+      f.write(f" {sub_key}:
+{sub_value}\n")
+print("funding.yml file has been create
+successfully.")
+
+custom: Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2', 'link3','link4']
+github: [crazyhorse58,AlphaGenesis]
+patreon: crazyhorse58
+tidelift: npm/crazyhorse58-package
+custom: ["https://www.paypal.me/TravisBartlett251", crazyhorse58.com]
